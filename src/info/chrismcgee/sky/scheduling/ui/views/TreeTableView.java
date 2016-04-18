@@ -165,7 +165,7 @@ public class TreeTableView extends CssLayout implements View {
 		selectedDate = (Date) event.getProperty().getValue();
 		logger.log(Level.INFO, "Calendar Value changed. New value: " + selectedDate.toString());
 		
-		progressBar.setVisible(true); // Give the user some visual hint abount loading taking place
+		progressBar.setVisible(true); // Give the user some visual hint about loading taking place
 		
 		// Perform the data load in a separate thread
 		loadDataInNewThread();

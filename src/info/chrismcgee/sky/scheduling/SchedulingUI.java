@@ -6,6 +6,7 @@ import java.util.logging.Logger;
 import javax.servlet.annotation.WebServlet;
 
 import com.google.gwt.thirdparty.guava.common.eventbus.Subscribe;
+import com.vaadin.annotations.Push;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.server.Page;
@@ -27,6 +28,7 @@ import info.chrismcgee.sky.scheduling.util.event.NavigationEvent;
 
 @SuppressWarnings("serial")
 @Theme("scheduling")
+@Push
 public class SchedulingUI extends UI {
 
 	private SchedulingEventBus schedulingEventBus;
